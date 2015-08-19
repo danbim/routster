@@ -27,14 +27,14 @@ var reverse = routster.reverse(contextPath, routes, options);
 var asset   = routster.asset(contextPath, options);
 
 // prints "/myapp/articles/?"
-console.log('route("articles_list")                                             =', route('articles_list'));
+console.log(route('articles_list'));
 
 // prints "/myapp/articles/123"
-console.log('reverse("article_by_id", { id : 123 })                             =', reverse('article_by_id', { id : 123 }));
+console.log(reverse('article_by_id', { id : 123 }));
 
 // prints "/myapp/articles/123?version=latest"
-console.log('reverse("article_by_id", { "id" : 123 }, { "version" : "latest" }) =', reverse('article_by_id', { id : 123 }, { "version" : "latest" }));
+console.log(reverse('article_by_id', { id : 123 }, { "version" : "latest" }));
 
 // prints "/myapp/lib/mylib.js"
-console.log('asset("lib/mylib.js")                                              =', asset('lib/mylib.js'));
+console.log(asset('lib/mylib.js'));
 ```
