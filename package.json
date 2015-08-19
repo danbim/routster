@@ -1,0 +1,25 @@
+{
+  "name": "routster",
+  "main": "routster.js",
+  "version": "0.0.1",
+  "description": "helps you generate (client- and server-side) (reverse) routes",
+  "keywords": [
+    "routes",
+    "route",
+    "router",
+    "reverse routes",
+    "express routes",
+    "express router"
+  ],
+  "homepage": "https://github.com/danbim/routster",
+  "bugs": {
+    "url": "https://github.com/danbim/routster/issues",
+    "email": "daniel@bimschas.com"
+  },
+  "license": "Beerware",
+  "author": "Daniel Bimschas <daniel@bimschas.com>",
+  "dependencies": {
+    "is-empty-object": "^1.1.0",
+    "url-assembler": "^1.2.4"
+  }
+}
