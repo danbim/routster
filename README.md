@@ -1,4 +1,4 @@
-# Routster
+# routster
 Helps you maintain all your (reverse) routes for your isomorphic JavaScript application in one file.
 
 Routes are named (e.g., ```'articles_by_id'```, see Usage below) and defined using a express route
@@ -11,6 +11,14 @@ the ```params``` (```{id : 123}```) and query is an object containing a set of `
 generation (```{'version' : 'latest', 'orderBy' : 'timestamp'}```).
 
 ## Usage
+
+routster is available on npmjs.org. Run
+
+```
+npm install --save routster
+```
+
+to install it in your local project and save the dependency to your own ```package.js``` file.
 
 ```
 var routster = require('routster');
@@ -38,3 +46,4 @@ console.log(reverse('article_by_id', { id : 123 }, { "version" : "latest" }));
 // prints "/myapp/lib/mylib.js"
 console.log(asset('lib/mylib.js'));
 ```
+
